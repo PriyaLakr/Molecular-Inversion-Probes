@@ -46,5 +46,5 @@ Python
 NCBI-BLAST+
 Primer3 
 
-Scripts are added in the scripts folder
+Scripts are located in pathogenMIPs.ipynb
 
