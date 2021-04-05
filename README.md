@@ -35,7 +35,8 @@ Keep the name of index and fasta file same
 
 
 
-# Designing MIPs for non-human genes
+# Designing MIPs for non-human genes (Under development)
+ 
 
 This workflow will generate molecular inversion probes for non-human genes, for instance, bacterial, viral and fungal genes
 
