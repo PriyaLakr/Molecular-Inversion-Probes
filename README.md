@@ -6,8 +6,8 @@
 MIPgen pipeline by Shendurlab 
 
 Dependencies:
-Bwa
-samtools
+Bwa 0.7.17
+samtools 1.11
 
 
 1. 
