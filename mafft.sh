@@ -1,4 +1,4 @@
-#! /usr/bash
+#!/usr/bin/bash
 
 echo "Give name of your fasta file as first argument, path of ouput folder as second argument, and path of input files as third argument. Run -> bash mafft.sh filename outpath inpath" 
 
