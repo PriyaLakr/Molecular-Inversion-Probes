@@ -44,8 +44,22 @@ This workflow will generate molecular inversion probes for non-human genes, for 
 Requirements:
 
 Python
-NCBI-BLAST+
-Primer3 
+MAFFT
 
-Scripts are located in pathogenMIPs.ipynb
+Scripts are located in pl_path_mips.py
+
+Sequences for AMR genes were obtained from https://card.mcmaster.ca/ontology/ database
+Sequences were aligned using MAFFT.sh script
+Multiple sequence alignment was used to identify regions containing extensive gaps, and such regions were avoided in downstream analysis.
+
+
+Design of molecular inversion probes (MIPs).
+The general format for the molecular inversion probes (MIPs) used here is a common NNN bp linker flanked by an extension arm of 18 to 20 bp and a ligation arm of 20 to 24 bp.
+The unique arms of each MIP target a specific 100 bp genomic region. 
+Linker can be the NGS sequencing adaptors and sample-specific barcodes. 
+MIPs for a given target region were chosen iteratively from the 5' to 3' end of the target region. Each successive MIP is chosen to satisfy the following criteria in order of priority: 1) resides on the opposite strand as the previous MIP, 2) doesn’t overlap with previous MIP, 3) avoids gapped regions as obtained from MSA. 
+Good probe features: lack polyNs (6) GC : 40-70 tm >= 60
+If no suitable MIPs can be picked, 2nd condition could be avoided.
+
+run —help flag for inputs in pl_path_mips.py
 
