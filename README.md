@@ -44,12 +44,13 @@ This workflow will generate molecular inversion probes for non-human genes, for 
 Requirements:
 
 Python
+
 MAFFT Aligner
 
 Scripts are located in pl_path_mips.py
 
-Sequences for AMR genes were obtained from https://card.mcmaster.ca/ontology/ database
-Sequences were aligned using MAFFT.sh script
+Sequences for AMR genes were obtained from https://card.mcmaster.ca/ontology/ database.
+Sequences were aligned using MAFFT.sh script.
 Multiple sequence alignment was used to identify regions containing extensive gaps, and such regions were avoided in downstream analysis.
 
 
