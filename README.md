@@ -39,7 +39,7 @@ samtools 1.11
 
 1. Obtain MIPgen
     
-       bash downloadmipgen.sh <path-to-store-mipgen-folder"
+       bash downloadmipgen.sh <path-to-store-mipgen-folder>
 
 
 2. Generate index from Human reference genome file (GRCh38.primary_assembly.genome.fa)
