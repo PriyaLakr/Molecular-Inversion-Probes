@@ -1,4 +1,4 @@
-#!/usr/bash
+#!/usr/bin/bash
 
 echo "Give the name of your gene of interest as first argument"
 echo "Give the name of the fasta file containing sequences as second argument"
