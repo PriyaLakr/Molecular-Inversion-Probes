@@ -1,4 +1,4 @@
-#!/usr/bash
+#!/usr/bin/bash
 
 echo "This is script for successfuly installing MIPgen and generating BWA index"
 
