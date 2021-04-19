@@ -44,7 +44,7 @@ This workflow will generate molecular inversion probes for non-human genes, for 
 Requirements:
 
 Python
-MAFFT
+MAFFT Aligner
 
 Scripts are located in pl_path_mips.py
 
