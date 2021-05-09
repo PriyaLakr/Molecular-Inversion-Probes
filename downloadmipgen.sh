@@ -18,6 +18,6 @@ tar -xf mipgen_example.tgz
 
 cd mipgen_practice
 
-
+## bwa index write here!! 
 
 
