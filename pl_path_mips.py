@@ -2,6 +2,7 @@
 
 import os
 import argparse 
+import re
 
 
 
@@ -61,6 +62,9 @@ def count_repeat(seq, num_repeats=6):
 	#if re.search(r"A{6,}|T{6,}|G{6,}|C{6,}", seq):
  #   if re.search(r"G{num_repeats,}", seq) or re.search(r"A{num_repeats,}", seq) or re.search(r"C{num_repeats,}", seq) or re.search(r"T{num_repeats,}", seq):
 #	return True
+def count_repeats(seq, num_repeats):
+    if re.search(r"A{%s,}|T{%s,}|G{%s,}|C{%s,}"%(num_repeats,num_repeats,num_repeats,num_repeats), seq):
+        return True
 
 def reverseCompl(s):
     complement = {"A":"T", "G":"C", "T":"A", "C":"G"}
