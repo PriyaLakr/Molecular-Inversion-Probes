@@ -58,7 +58,8 @@ def count_repeat(seq, num_repeats=6):
     count_repeat_C = "C" * num_repeats
     if count_repeat_A in seq or count_repeat_T in seq or count_repeat_G in seq or count_repeat_C in seq:
         return True
-    
+ #   if re.search(r"G{num_repeats,}", seq) or re.search(r"A{num_repeats,}", seq) or re.search(r"C{num_repeats,}", seq) or re.search(r"T{num_repeats,}", seq):
+#	return True
 
 def reverseCompl(s):
     complement = {"A":"T", "G":"C", "T":"A", "C":"G"}
