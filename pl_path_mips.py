@@ -6,7 +6,7 @@ import re
 
  
 def remove_gaps(file_path):
-	"""give indexes of regions which lack gaps in multiple sequence alignment
+	"""Remove regions which contain gaps in multiple sequence alignment
 	
 	"""
 	
