@@ -4,11 +4,12 @@ import os
 import argparse 
 import re
 
-
-
-# give indexes of regions which lack gaps in multiple sequence alignment
+ 
 def remove_gaps(file_path):
-
+	"""give indexes of regions which lack gaps in multiple sequence alignment
+	
+	"""
+	
     from Bio import AlignIO
     alignment = AlignIO.read(file_path, "fasta")
 
@@ -22,6 +23,9 @@ def remove_gaps(file_path):
 
 
 def select_index(nogap_alignment):
+	"""select indexes of regions which lack gaps in multiple sequence alignment
+	
+	"""
     from itertools import groupby
     from operator import itemgetter
 
@@ -43,8 +47,11 @@ def load_seq(final_indexes,seq):
     seque = list(seq[i:j] for i,j in final_indexes)
     return seque
 
-# open fasta file containing sequence
+
 def open_seq(seq):
+	"""open fasta file containing sequence
+	
+	"""
     from Bio import SeqIO
     import os
    
@@ -53,15 +60,12 @@ def open_seq(seq):
 
 
 def count_repeat(seq, num_repeats=6):
-    count_repeat_A = "A" * num_repeats
-    count_repeat_T = "T" * num_repeats
-    count_repeat_G = "G" * num_repeats
-    count_repeat_C = "C" * num_repeats
-    if count_repeat_A in seq or count_repeat_T in seq or count_repeat_G in seq or count_repeat_C in seq:
-        return True
+  
 	#if re.search(r"A{6,}|T{6,}|G{6,}|C{6,}", seq):
  #   if re.search(r"G{num_repeats,}", seq) or re.search(r"A{num_repeats,}", seq) or re.search(r"C{num_repeats,}", seq) or re.search(r"T{num_repeats,}", seq):
 #	return True
+	pass
+
 def count_repeats(seq, num_repeats):
     if re.search(r"A{%s,}|T{%s,}|G{%s,}|C{%s,}"%(num_repeats,num_repeats,num_repeats,num_repeats), seq):
         return True
