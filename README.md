@@ -1,5 +1,6 @@
 # Molecular-Inversion-Probes
 
+Author: Priya Lakra
 
 # Designing MIPs for non-human genes
  
