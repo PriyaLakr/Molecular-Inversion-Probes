@@ -70,7 +70,7 @@ def count_repeats(seq, num_repeats):
     if re.search(r"A{%s,}|T{%s,}|G{%s,}|C{%s,}"%(num_repeats,num_repeats,num_repeats,num_repeats), seq):
         return True
 
-def reverseCompl(s):
+def reverse_compl(s):
     complement = {"A":"T", "G":"C", "T":"A", "C":"G"}
     st = ""
     for i in s.upper():
